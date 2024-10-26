@@ -74,6 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (scoreTotalOne >= 50 || scoreTotalTwo >= 50) {
       alert(scoreTotalOne >= 50 ? 'Player One Wins!' : 'Player 2 Wins!');
+      scoreOne = 0;
+      scoreTwo = 0;
+      NewGame();
+      resetScores();
       return;
     }
     resetCurrentScore();
